@@ -4,20 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAGE FRO PRACTISE</title>
+    <title>PAGE FOR PRACTISE</title>
+<!--MY EXTERNAL CSS CODE-->
+<link rel="stylesheet" href="style.css">
+<!--MY INTERNAL CSS CODE-->
+   <style>
+ * { 
+      color: purple;
+    } 
+    
+ div {
+  color: yellow;
+}
+
+.alert-text{
+    color:green;
+}
+
+#title{
+    background-color:red
+} 
+
+.ancestor .contents {
+ background-color:magenta ;
+ font-size:150px;
+ text-align:end;
+ 
+}
+
+img{
+    height:250px;
+    width: 220px;
+ 
+}
+    </style>
+
+
 </head>
 
 <!-- I am a html comment -->
 <body>
 <h1>A BETTER 2022</h1>
 
+<div>Enjoying my learning process</div>
+
+<!--ADDED 2 CLASSES TO ONE ELEMENT-->
+<div class="alert-text  severe alert" >
+    HELLO WORLD, I'M COMING OUT!
+</div>
+
 <h2>My paragraphs</h2>
 
 <strong><P>Using this page to practise and see what happens when i use something new</P> </strong> 
 
+<!--practising using an id-->
+<div  id="title">MY AWESOME SOFTWARE DEVELOPER JOURNEY</div>
+
  <em><P>The more I practise the better I become</P></em>
 
  <h3>My Lists</h3>
+
  <!--ORDERED LIST-->
  <ul>
     <li>Item 1</li>
@@ -37,5 +83,17 @@
   
 <img src="https://www.theodinproject.com/mstile-310x310.png" >
 <img src=../images/chef.gif >
+
+<!--THIS IS A SECTION TO TEST HOW THE DESCENDANT COBINATOR WORKS CHECK THE STYLE TOO-->
+<div class="ancestor">  A -->
+    <div class="contents"> B -->
+      <div class="contents">  C -->
+      </div>
+    </div>
+  </div>
+  
+  <div class="contents"></div>  D -->
+
+
 </body>
 </html>
